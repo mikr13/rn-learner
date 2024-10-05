@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
   text: {
@@ -7,10 +7,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export const HomeScreen = () => {
+export const HomeScreen = ({ navigation }) => {
   return (
-    <Text style={styles.text}>Hello there!
-    </Text>
+    <View>
+      <Text style={styles.text}>Hello there!</Text>
+      <Button title="Go to components screen" onPress={() => navigation.navigate("Components")} />
+    </View>
   );
 };
 

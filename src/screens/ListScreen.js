@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { Button, FlatList, StyleSheet, Text, View } from "react-native";
 
 export const styles = StyleSheet.create({
   text: {
@@ -15,17 +15,15 @@ const friends = [
   { name: "Friend #2", age: 21 },
   { name: "Friend #3", age: 22 },
   { name: "Friend #4", age: 23 },
-  { name: "Friend #5", age: 24 },
-  { name: "Friend #6", age: 25 },
-  { name: "Friend #7", age: 26 },
-  { name: "Friend #8", age: 27 },
-  { name: "Friend #9", age: 28 },
 ];
 
-export const ListScreen = () => {
+export const ListScreen = ({ navigation }) => {
 
   return (
     <View>
+      <View style={styles.view}>
+        <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+      </View>
       <View style={styles.view}>
         <Text>Normal List (with Array.map):</Text>
         {friends.map((friend) => (
