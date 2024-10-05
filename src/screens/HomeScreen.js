@@ -1,9 +1,5 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
-
-const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
-};
+import { StyleSheet, Text } from "react-native";
 
 const styles = StyleSheet.create({
   text: {
@@ -11,4 +7,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export const HomeScreen = () => {
+  return (
+    <Text style={styles.text}>Hello there!
+    </Text>
+  );
+};
+
