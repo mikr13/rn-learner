@@ -38,8 +38,8 @@ export const ListScreen = () => {
         <Text>Flat List (preferred in RN as it has built in scrolling & other optimizations): </Text>
         <FlatList
           data={friends}
-          renderItem={({ item }) => (
-            <Text style={styles.text}>
+          renderItem={({ item }, idx) => (
+            <Text style={styles.text} key={idx}>
               {item.name} - Age {item.age}
             </Text>
           )}
