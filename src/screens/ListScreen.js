@@ -40,6 +40,7 @@ export const ListScreen = () => {
           data={friends}
           renderItem={({ item }, idx) => (
             <Text style={styles.text} key={idx}>
+              {/* Can either do key like this or use keyExtractor prop */}
               {item.name} - Age {item.age}
             </Text>
           )}
