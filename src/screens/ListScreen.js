@@ -27,7 +27,7 @@ export const ListScreen = () => {
   return (
     <View>
       <View style={styles.view}>
-        <Text>Normal List: </Text>
+        <Text>Normal List (with Array.map):</Text>
         {friends.map((friend) => (
           <Text key={friend.name} style={styles.text}>
             {friend.name} - Age {friend.age}
