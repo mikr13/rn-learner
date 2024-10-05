@@ -12,6 +12,7 @@ export const HomeScreen = ({ navigation }) => {
       <Button title="Go to counter screen" onPress={() => navigation.navigate("Counter")} />
       <Button title="Go to color screen" onPress={() => navigation.navigate("Color")} />
       <Button title="Go to color adjuster screen" onPress={() => navigation.navigate("ColorAdjuster")} />
+      <Button title="Go to input screen" onPress={() => navigation.navigate("Input")} />
     </View>
   );
 };
