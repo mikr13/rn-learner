@@ -13,6 +13,7 @@ export const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>Hello there!</Text>
       <Button title="Go to components screen" onPress={() => navigation.navigate("Components")} />
       <Button title="Go to list screen" onPress={() => navigation.navigate("List")} />
+      <Button title="Go to image screen" onPress={() => navigation.navigate("Image")} />
     </View>
   );
 };
